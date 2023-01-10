@@ -23,7 +23,7 @@ export default function App() {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossorigin
+          crossOrigin="true"
         ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
