@@ -50,7 +50,7 @@ export async function updateExpense(id, expenseData) {
       },
     });
   } catch (error) {
-    console.log(error);
+    console.error(error);
     throw error;
   }
 }
@@ -61,7 +61,7 @@ export async function deleteExpense(id) {
       where: { id },
     });
   } catch (error) {
-    console.log(error);
+    console.error(error);
     throw error;
   }
 }
