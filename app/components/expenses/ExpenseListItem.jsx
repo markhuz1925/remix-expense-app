@@ -4,6 +4,9 @@ function ExpenseListItem({ id, title, amount }) {
   const fetcher = useFetcher();
 
   function deleteExpenseItemHandler() {
+    const proceed = confirm("Are you sure you want to delete this expense?");
+
+    if (!proceed) return;
     fetcher.submit(null, { method: "delete", action: `/expenses/${id}` });
   }
 
